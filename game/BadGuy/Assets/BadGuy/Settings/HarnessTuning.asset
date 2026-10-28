@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02c759b222801fc469822814c49134c2, type: 3}
+  m_Name: HarnessTuning
+  m_EditorClassIdentifier: Assembly-CSharp::BadGuy.HarnessTuning
+  BaseDamage: 20
+  MagazineSize: 12
+  StartingReserve: 72
+  ReserveCap: 120
+  ReloadSeconds: 1.2
+  FireInterval: 0.16
+  OverdriveSeconds: 8
+  AIDropChance: 0.05
+  AmmoChance: 0.2
+  BiryaniChance: 0.3
+  PickupSeconds: 8
+  TransitionSeconds: 12
+  CopHP: 40
+  RockHP: 30
+  KnifeHP: 40
+  RunnerHP: 10
+  BossHP: 1200
+  CopDamage: 10
+  RockDamage: 8
+  KnifeDamage: 20
+  BossDamage: 15

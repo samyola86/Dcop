@@ -1,0 +1,29 @@
+{
+  "folders": [{ "path": "." }],
+  "settings": {
+    "files.exclude": {
+      "game/BadGuy/Library": true,
+      "game/BadGuy/Temp": true,
+      "game/BadGuy/Obj": true
+    },
+    "files.watcherExclude": {
+      "**/Library/**": true,
+      "**/Temp/**": true,
+      "**/artifacts/**": true
+    }
+  },
+  "extensions": {
+    "recommendations": ["visualstudiotoolsforunity.vstuc", "ms-dotnettools.csharp", "ms-python.python"]
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {"label": "BAD GUY: Doctor", "type": "process", "command": "python", "args": ["${workspaceFolder}/tools/harness.py", "doctor"], "problemMatcher": []},
+      {"label": "BAD GUY: Validate", "type": "process", "command": "python", "args": ["${workspaceFolder}/tools/harness.py", "validate"], "group": "test", "problemMatcher": []},
+      {"label": "BAD GUY: Open Unity", "type": "process", "command": "python", "args": ["${workspaceFolder}/tools/harness.py", "open"], "problemMatcher": []},
+      {"label": "BAD GUY: Build Windows", "type": "process", "command": "python", "args": ["${workspaceFolder}/tools/harness.py", "build-windows"], "group": "build", "problemMatcher": []},
+      {"label": "BAD GUY: Smoke test", "type": "process", "command": "python", "args": ["${workspaceFolder}/tools/harness.py", "smoke"], "group": "test", "problemMatcher": []},
+      {"label": "BAD GUY: Blender sample", "type": "process", "command": "python", "args": ["${workspaceFolder}/tools/harness.py", "blender-sample"], "problemMatcher": []}
+    ]
+  }
+}
