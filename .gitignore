@@ -1,0 +1,14 @@
+# Local Unity caches, generated builds and machine-specific files
+**/Library/
+**/Temp/
+**/Obj/
+**/Logs/
+**/UserSettings/
+**/.vs/
+**/__pycache__/
+*.pyc
+*.blend1
+*.blend2
+.DS_Store
+Thumbs.db
+/.onboarding-test/
